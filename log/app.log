@@ -1,0 +1,40 @@
+# Logfile created on 2022-06-06 21:06:07 +0200 by logger.rb/v1.4.2
+I, [2022-06-06T21:06:16.520670 #12064]  INFO -- : Request: GET /tests/1
+Handler: #<TestsController:0x00007f848b2967a8>#show
+Parameters: {}
+I, [2022-06-06T21:07:53.547916 #12064]  INFO -- : Request: GET /tests?user=who
+Handler: #<TestsController:0x00007f848b1b46f0>#index
+Parameters: {"user"=>"who"}
+I, [2022-06-06T21:10:00.381112 #12208]  INFO -- : Request: GET /tests?user=who
+Handler: tests#index
+Parameters: {"user"=>"who"}
+I, [2022-06-06T21:15:16.475758 #12311]  INFO -- : Request: GET /tests/101
+Handler: tests#show
+Parameters: {}
+I, [2022-06-06T21:15:16.475861 #12311]  INFO -- : Response: 200 [text/html] 
+I, [2022-06-06T21:15:42.433310 #12311]  INFO -- : Request: GET /tests
+Handler: tests#index
+Parameters: {}
+I, [2022-06-06T21:15:42.433392 #12311]  INFO -- : Response: 201 [text/plain] 
+I, [2022-06-06T21:22:07.685450 #12467]  INFO -- : Request: GET /tests
+Handler: tests#index
+Parameters: {}
+I, [2022-06-06T21:22:07.685564 #12467]  INFO -- : Response: 201 [text/plain]
+I, [2022-06-06T21:22:36.678233 #12467]  INFO -- : Request: GET /tests/3
+Handler: tests#show
+Parameters: {}
+I, [2022-06-06T21:22:36.678310 #12467]  INFO -- : Response: 200 [text/html]
+I, [2022-06-06T21:23:41.590344 #12578]  INFO -- : Request: GET /tests/33
+Handler: tests#show
+Parameters: {}
+I, [2022-06-06T21:23:41.590695 #12578]  INFO -- : Response: 200 [text/html]tests/show.html.erb
+I, [2022-06-06T21:24:51.750219 #12677]  INFO -- : Request: GET /tests
+Handler: tests#index
+Parameters: {}
+I, [2022-06-06T21:24:51.750802 #12677]  INFO -- : Response: 201 [text/plain]
+
+I, [2022-06-06T21:25:22.940167 #12677]  INFO -- : Request: GET /tests/5
+Handler: tests#show
+Parameters: {}
+I, [2022-06-06T21:25:22.940247 #12677]  INFO -- : Response: 200 [text/html]
+tests/show.html.erb
