@@ -28,10 +28,13 @@ module Simpler
 
     def call(env)
       route = @router.route_for(env)
-      controller = route.controller.new(env)
-      action = route.action
-
-      make_response(controller, action)
+      if route
+        controller = route.controller.new(env)
+        action = route.action
+        make_response(controller, action)
+      else
+        not_found_response
+      end
     end
 
     private
@@ -54,5 +57,14 @@ module Simpler
       controller.make_response(action)
     end
 
+    def not_found_response
+      response = Rack::Response.new
+
+      response['Content-Type'] = 'text/plain'
+      response.status = 404
+      response.write('URL was not found')
+      
+      response.finish
+    end
   end
 end
